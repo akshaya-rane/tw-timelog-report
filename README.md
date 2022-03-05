@@ -24,10 +24,8 @@ Please follow below steps to create API key for any user on Teamwork.
 - Go to your [Teamwork](https://teamwork.com/)  account.
 - Create collaborator a user / you can use any existing standard/collaborator user type.
 - Give access to existing projects.
-- Provide permission to Give automatic access to all future projects. 
-- Login to the corresponding user account. 
-- Go to Edit account --> API & Mobiles --> Enable Token
-- This will provide a Token key for this account. Please note down the API key.
+- Provide permission to Give automatic access to [all future projects](https://support.teamwork.com/projects/project-people/giving-automatic-access-to-all-future-projects#). 
+- You can locate API key for this account by following [this](https://support.teamwork.com/projects/using-teamwork/locating-your-api-key) tutorial. Please note down the API key.
 
 ### Float account - API key
 
@@ -35,7 +33,7 @@ Please follow below steps to create API key.
 
 - Go to your [Float](https://www.float.com/) account.
 - Just go to Team Settings --> Integrations. 
-- Generate an API key. 
+- Generate an [API key](https://support.float.com/en/articles/55483-api). 
 
 ***
 ## How to use this tool?
@@ -88,6 +86,14 @@ This will send a single reminder email with all the recipients added in the send
 Please make sure you have installed PHPMailer library & appropriate credentials are setup in credentials.json file. 
 
 ***
+
+## Screenshots
+
+Email Notification will be displayed as below,
+
+![email-notification](https://user-images.githubusercontent.com/11537877/156890425-8319a543-5319-4e40-9ead-d7962ed49036.png)
+
+
 ## References
 
 - [Float API Reference](https://developer.float.com/api_reference.html)
