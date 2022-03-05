@@ -51,6 +51,7 @@ Please follow below steps to create API key.
 
 Please find credentials file content below,
 
+```json
 {
     "float": "<Float API Key>",
     "tw": "<Teamwork User API key>:a",
@@ -61,6 +62,7 @@ Please find credentials file content below,
     "client_secret" : "<XOAuth Client secret>",
     "refresh_token": "<XOauth refresh token>"
 }
+```
 
 Please add appropriate value as stated beside each key. Don't forget to remove brackets. 
 
