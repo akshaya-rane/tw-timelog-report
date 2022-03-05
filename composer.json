@@ -1,0 +1,17 @@
+{
+    "name": "tw-timelog-report/tw-timelog-report",
+    "description": "Timelog reminder notifications using PHPMailer",
+    "authors": [
+        {
+            "name": "Akshaya Rane"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "license": [
+        "LGPL-2.1-only",
+        "GPL-3.0-or-later"
+     ]
+}
