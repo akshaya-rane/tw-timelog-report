@@ -16,7 +16,7 @@ The current integration is based on Teamwork & Float API. Teamwork & Float alrea
 ---
 ## Pre-requisites
 
-### [Teamwork account - API Key](tw-api-key-create)
+### Teamwork account - API Key
 
 
 Please follow below steps to create API key for any user on Teamwork.
@@ -29,7 +29,7 @@ Please follow below steps to create API key for any user on Teamwork.
 - Go to Edit account --> API & Mobiles --> Enable Token
 - This will provide a Token key for this account. Please note down the API key.
 
-### [Float account - API key](float-api-key-create)
+### Float account - API key
 
 Please follow below steps to create API key.
 
@@ -47,7 +47,7 @@ Please follow below steps to create API key.
 * * 'map_users.php' file -- Maps Teamwork & Float users.
 * * 'get_timelog.php' file -- Calculate log difference from schedule & send reminder notification.
 
-### [Create credentials.json file](creds-file-create)
+### Create credentials.json file
 
 Please find credentials file content below,
 
@@ -64,40 +64,26 @@ Please find credentials file content below,
 
 Please add appropriate value as stated beside each key. Don't forget to remove brackets. 
 
+You can refer to [Using Gmail with XOAUTH2](https://github.com/PHPMailer/PHPMailer/wiki/Using-Gmail-with-XOAUTH2) for creating Gmail XOAuth details.
+
 Create **'credentials.json'** file & place it in the root folder of this tool.
+
 
 ***
 
 ## FAQ
 
-> 1. How to create Teamwork API key?
-
-Please refer [this](#tw-api-key-create).
-
-> 2. How to find Float API key?
-
-Please refer [this](#float-api-key-create).
-
-> 3. How to find Teamwork project URL?
+1. How to find Teamwork project URL?
 
 It's the URL by which you access your teamwork account.
 
-> 4. How to create XOAuth credentials?
-
-Please refer to [Using Gmail with XOAUTH2](https://github.com/PHPMailer/PHPMailer/wiki/Using-Gmail-with-XOAUTH2).
-
-> 5. Facing fatal error to send email.
-
-Please make sure you have installed PHPMailer library & appropriate credentials are setup in credentials.json file. 
-
-> 6. Where to add credentials.json file?
-
-Please place this file in the root of current tool. Make sure to follow instructions listed [here](#creds-file-create).
-
-> 7. Will this tool send reminder to individual recipients? 
+2. Will this tool send reminder to individual recipients? 
 
 This will send a single reminder email with all the recipients added in the sender list. 
 
+3. Facing fatal error to send email.
+
+Please make sure you have installed PHPMailer library & appropriate credentials are setup in credentials.json file. 
 
 ***
 ## References
