@@ -100,3 +100,32 @@ if(!$mail->send()){
  }else{
      echo "Message sent!";
  }
+
+ if(count($email_list)) {
+    //Summary send
+    
+        $mail->clearAttachments();
+        $mail->setFrom($email, 'TimeLog Summary');
+        $mail->clearAllRecipients();
+        $mail->addAddress($creds['summary_email_address'], $creds['summary_email_alias']);
+    
+        $mail->Subject = 'TimeLog Summary week - ' . $start_week . " -- ". $end_week;
+        //Read an HTML message body from an external file, convert referenced images to embedded,
+        //convert HTML into a basic plain-text alternative body
+        $mail->CharSet = PHPMailer::CHARSET_UTF8;
+    
+        ob_start();
+        include(__DIR__ . '/template/summary.php');
+        $content = ob_get_contents();
+        $mail->msgHTML(ob_get_contents()); //Read an HTML message body from an external file, convert referenced images to embedded,
+    
+        ob_end_clean();
+    
+        $mail->AltBody = 'Last week timelog summary';
+    
+        if(!$mail->send()){
+           echo "<br>Mailer Error: " . $mail->ErrorInfo;
+        }else{
+            echo "<br><br>Message sent!";
+        }    
+    }

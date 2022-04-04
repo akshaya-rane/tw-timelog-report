@@ -54,11 +54,14 @@ Please find credentials file content below,
     "float": "<Float API Key>",
     "tw": "<Teamwork User API key>:a",
     "tw_base":"<Base URL of Teamwork project>",
+    "float_base": "<Base URL of Float project>",
     "company_name": "<Your company name>",
     "reminder_email": "<Gmail account Email ID used for sending email>",
     "client_id": "<XOauth client ID>",
     "client_secret" : "<XOAuth Client secret>",
-    "refresh_token": "<XOauth refresh token>"
+    "refresh_token": "<XOauth refresh token>",
+    "summary_email_address": "<Email address where Summary email notification to send>",
+    "summary_email_alias": "Alice name for Summary email"
 }
 ```
 
